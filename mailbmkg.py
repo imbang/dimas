@@ -12,7 +12,7 @@ from twisted.mail import imap4
 from twisted.python import failure
 
 @defer.inlineCallbacks
-def main(reactor, username="bayu.imbang@bmkg.go.id", password="1mb4ng12",
+def main(reactor, username="bayu.imbang@bmkg.go.id", password="xxxxxxx",
          strport="ssl:host=mail.bmkg.go.id:port=993"):
     endpoint = endpoints.clientFromString(reactor, strport)
     factory = protocol.Factory()
