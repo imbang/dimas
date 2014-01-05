@@ -10,7 +10,7 @@ import imaplib, email
 
 #log in and select the inbox
 mail = imaplib.IMAP4_SSL('imap.gmail.com')
-mail.login('imbang80', '1mb4ng12')
+mail.login('aaaaaaaaaa', 'bbbbbbbbb')
 #print "email ",mail.list()
 #sys.exit(1)
 
