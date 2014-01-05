@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en" id="sacad">
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="sacad administrator dashboard" content="sacad administrator dashboard" />
+
+	<title>SACA&amp;D Administrator Dashboard</title>
+    <style>
+        body {
+            -webkit-background-clip: border-box;
+            -webkit-background-origin: padding-box;
+            -webkit-background-size: auto;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgb(255, 255, 255);
+            background-image: none;
+            background-origin: padding-box;
+            background-size: auto;
+            color: rgb(51, 51, 51);
+            direction: ltr;
+            display: block;
+            font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+            height: 867px;
+            line-height: 14px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            overflow-y: scroll;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            text-align: left;
+            unicode-bidi: embed;
+            width: 1007px;    
+        }
+        
+        div {
+            display: block;
+        }
+            
+        #greenBar {
+            background-color: #d5f191;
+            height: 82px;
+            min-width: 980px;
+            border-bottom:#fd6c0f 3px solid;
+        }
+        
+        #greenBarContent {
+            padding-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        
+        #title {
+            font-size: 30px;
+            width: 700px;
+			display: block;
+            color: rgb(255,255,255);
+            padding-top:35px;
+			margin-bottom:30px;
+        }
+		
+		#title span {
+			font-size: 60px;
+			font-family: 'arial black';
+		}
+        
+        #globalContainer {
+            margin: 0 auto;
+            position: relative;
+            zoom: 1;
+        }
+        
+        #content {
+            margin: 0;
+            outline: none;
+            padding: 0;
+            width: auto;
+        }
+        
+        .pvl {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 980px;
+            margin:0 auto;
+        }
+        
+    </style>
+	<link rel="stylesheet" href="screen.css" type="text/css">
+	<script type="text/javascript" src="dimas.js"></script>
+</head>
+
+<body>
+<div class="_li">
+<div id="greenBar">
+<div id="greenBarContent">
+<div id="title"><span>SACA&amp;D</span> Administrator Dashboard</div>
+<div id="globalContainer"><div id="content">
+<div style="background: #E7EBF2;">
+<div class="pvl">
+{% block content %}{% endblock %}
+</div>
+</div>
+</div></div>
+</div>
+<div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

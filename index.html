@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<table border=1 cellpadding=5 class=selectable-table>
+<thead>
+<tr>
+<td>Req. type</td>
+<td>Req. Date</td>
+<td>Contributor</td>
+<td>Station Name</td>
+<td>Element</td>
+<td>Filename</td>
+<td>Processor Name</td>
+<td></td>
+</tr>
+</thead>
+<tbody>
+{% set i = 1 %}
+{% for dt in data %}
+<tr onmouseover='TableRow.onmouseover(this,{{ i }});' onmouseout='TableRow.onmouseout(this,{{ i }});' 
+	onclick='TableRow.onclick(this,{{ i }});'>
+{% if dt[0]==1 %}
+<td>ADD</td>
+{% else %}
+<td>UPDATE</td>
+{% endif %}
+<td>{{ dt[1].strftime('%Y-%m-%d') }}</td>
+<td>{{ dt[2] }}</td>
+<td>{{ dt[3] }}</td>
+<td>{{ dt[4] }}</td>
+<td>{{ dt[5] }}</td>
+<td>{{ dt[6] }}</td>
+<td><a href="proceed?id={{ dt[7] }}">proceed</a></td>
+{% set i = i + 1 %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}
