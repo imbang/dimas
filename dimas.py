@@ -16,7 +16,7 @@ if cp.__version__.startswith('3.0') and cp.engine.state==0:
 		   
 def connect(thread_index): 
     # Create a connection and store it in the current thread 
-    cp.thread_data.db = MySQLdb.connect('localhost', 'dimas', 'd1m4s', 'dimasdb') 
+    cp.thread_data.db = MySQLdb.connect('localhost', 'yyyyy', 'xxxxx', 'dimasdb') 
  
 # Tell cp to call "connect" for each thread, when it starts up 
 cp.engine.subscribe('start_thread', connect)
